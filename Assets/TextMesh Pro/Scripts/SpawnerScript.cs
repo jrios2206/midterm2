@@ -20,7 +20,7 @@ public class SpawnerScript : MonoBehaviour
     //If set to 0,0, the object always spawns right on top of the spawner
     public Vector2 Range;
     
-    void Update()
+    void Update()   
     {
         //Every frame, make the Countdown variable go down in real time.
         Countdown -= Time.deltaTime;

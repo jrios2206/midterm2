@@ -10,7 +10,7 @@ public class SimplePlayerController : MonoBehaviour
     public Rigidbody2D RB;
     
     //This will control how fast the player moves
-    public float Speed = 5;
+    public float Speed = 1;
 
     //Start automatically gets triggered once when the objects turns on/the game starts
     void Start()
@@ -51,5 +51,6 @@ public class SimplePlayerController : MonoBehaviour
         
         //Finally, I take that variable and I feed it to the component in charge of movement
         RB.linearVelocity = vel;
+    
     }
 }

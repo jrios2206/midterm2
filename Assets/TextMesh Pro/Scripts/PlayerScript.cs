@@ -17,7 +17,7 @@ public class PlayerScript : MonoBehaviour
     public TextMeshPro ScoreText;
     
     //This will control how fast the player moves
-    public float Speed = 5;
+    public float Speed = 1;
     
     //This is how many points we currently have
     public int Score = 0;
@@ -35,27 +35,16 @@ public class PlayerScript : MonoBehaviour
     {
         //The code below controls the character's movement
         //First we make a variable that we'll use to record how we want to move
-        Vector2 vel = new Vector2(0,0);
+        Vector2 vel = new Vector2(Speed,RB.linearVelocityY);
         
-        //Then we use if statement to figure out what that variable should look like
         
-        //If I hold the right arrow key, the player should move right. . .
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            vel.x = Speed;
-        }
-        //If I hold the left arrow, the player should move left. . .
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            vel.x = -Speed;
-        }
         //If I hold the up arrow, the player should move up. . .
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.W))
         {
             vel.y = Speed;
         }
         //If I hold the down arrow, the player should move down. . .
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.S))
         {
             vel.y = -Speed;
         }
