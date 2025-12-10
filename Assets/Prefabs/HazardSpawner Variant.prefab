@@ -52,22 +52,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HazardSpawner Variant
       objectReference: {fileID: 0}
-    - target: {fileID: 2708113131839105941, guid: 8d7deffe294d5a941bb66542a63c9c01, type: 3}
-      propertyPath: Range.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2708113131839105941, guid: 8d7deffe294d5a941bb66542a63c9c01, type: 3}
-      propertyPath: Range.y
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2708113131839105941, guid: 8d7deffe294d5a941bb66542a63c9c01, type: 3}
-      propertyPath: Countdown
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2708113131839105941, guid: 8d7deffe294d5a941bb66542a63c9c01, type: 3}
-      propertyPath: SpawnTime
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

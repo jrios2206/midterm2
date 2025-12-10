@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -37,13 +36,12 @@ public class PlayerScript : MonoBehaviour
         //First we make a variable that we'll use to record how we want to move
         Vector2 vel = new Vector2(Speed,RB.linearVelocityY);
         
-        
-        //If I hold the up arrow, the player should move up. . .
+        //If I hold the up arrow, the player should move up...
         if (Input.GetKey(KeyCode.W))
         {
             vel.y = Speed;
         }
-        //If I hold the down arrow, the player should move down. . .
+        //If I hold the down arrow, the player should move down...
         if (Input.GetKey(KeyCode.S))
         {
             vel.y = -Speed;
@@ -54,7 +52,7 @@ public class PlayerScript : MonoBehaviour
     }
 
     //This gets called whenever you bump into another object, like a wall or coin.
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         //This checks to see if the thing you bumped into had the Hazard tag
         //If it does...
@@ -71,7 +69,7 @@ public class PlayerScript : MonoBehaviour
         {
             //Tell the coin that you bumped into them so they can self destruct or whatever
             coin.GetBumped();
-            //Make your score variable go up by one. . .
+            //Make your score variable go up by one...
             Score++;
             //And then update the game's score text
             UpdateScore();
