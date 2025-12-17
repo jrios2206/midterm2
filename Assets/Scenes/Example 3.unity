@@ -372,20 +372,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6101611389292858643, guid: b5a8cb5213168a242a1503548f243dde, type: 3}
   bulletSpawn: {fileID: 316134454}
   fireRate: 0.3
---- !u!114 &330915060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330915052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11223db2a4d3d9843a8a53bab080b07d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CoinWin
-  Coins: 0
-  CoinsToWin: 10
 --- !u!1 &394526835
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,9 +896,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 445831227596155269, guid: 5465daea84a2bcb43acd34cbcbb9c9ae, type: 3}
       insertIndex: -1
       addedObject: {fileID: 330915059}
-    - targetCorrespondingSourceObject: {fileID: 445831227596155269, guid: 5465daea84a2bcb43acd34cbcbb9c9ae, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 330915060}
   m_SourcePrefab: {fileID: 100100000, guid: 5465daea84a2bcb43acd34cbcbb9c9ae, type: 3}
 --- !u!1001 &6075954917310736636
 PrefabInstance:
@@ -1205,7 +1188,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -6545501649238911321, guid: fb946d28a97bb974a85272d12a1a51be, type: 3}
       propertyPath: speed
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1849279779400285333, guid: fb946d28a97bb974a85272d12a1a51be, type: 3}
       propertyPath: m_Name
@@ -1230,6 +1213,10 @@ PrefabInstance:
     - target: {fileID: 5330708849018996929, guid: fb946d28a97bb974a85272d12a1a51be, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7293690302352580765, guid: fb946d28a97bb974a85272d12a1a51be, type: 3}
+      propertyPath: range
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8365267220268449897, guid: fb946d28a97bb974a85272d12a1a51be, type: 3}
       propertyPath: m_Size.x

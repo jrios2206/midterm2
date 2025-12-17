@@ -20,6 +20,7 @@ public class PlayerScript : MonoBehaviour
     
     //This is how many points we currently have
     public int Score = 0;
+    private bool speedBoosted = false;
     
     //Start automatically gets triggered once when the objects turns on/the game starts
     void Start()
@@ -73,6 +74,15 @@ public class PlayerScript : MonoBehaviour
             Score++;
             //And then update the game's score text
             UpdateScore();
+            // code to make fast the player by collection coins
+                if (Score >= 10 && !speedBoosted)
+                { 
+                    Speed *= 2.0f;
+                    speedBoosted = true;
+                    Debug.Log("Speed Increased");
+                 }
+               
+                    
         }
     }
 
